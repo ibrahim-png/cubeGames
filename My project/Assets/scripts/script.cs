@@ -107,30 +107,49 @@ public TextMeshProUGUI textMeshLife;
     {
 
 
+        //player hareket kodlari
+        //if (Input.GetKeyDown(KeyCode.W) && isClickPlayButton == true)
+        //{
+        //    isPressW = 1;
 
-        if (Input.GetKeyDown(KeyCode.W) && isClickPlayButton == true)
+        //}
+        //if (Input.GetKeyDown(KeyCode.D) && isClickPlayButton == true)
+        //{
+        //    transform.position = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
+        //    if (transform.position.x > 1)
+        //    {
+        //        transform.position = new Vector3(1, transform.position.y, transform.position.z);
+        //    }
+        //}
+        //if (Input.GetKeyDown(KeyCode.A) && isClickPlayButton == true)
+        //{
+        //    transform.position = new Vector3(transform.position.x - 1, transform.position.y, transform.position.z);
+        //    if (transform.position.x < -1)
+        //    {
+        //        transform.position = new Vector3(-1, transform.position.y, transform.position.z);
+        //    }
+        //}
+
+        if (Input.GetMouseButtonDown(0) && isClickPlayButton == true)
         {
-          isPressW = 1;
-          
+            isPressW = 1;
+
         }
-        if (Input.GetKeyDown(KeyCode.D) && isClickPlayButton == true)
+        if (transform.position.x > 1)
         {
-         transform.position = new Vector3(transform.position.x + 1 ,transform.position.y,transform.position.z);
-          if (transform.position.x >1)
-          {
-             transform.position = new Vector3( 1 ,transform.position.y,transform.position.z);
-          }
+            transform.position = new Vector3(1, transform.position.y, transform.position.z);
         }
-         if (Input.GetKeyDown(KeyCode.A) && isClickPlayButton == true)
+        if (transform.position.x < -1)
         {
-         transform.position = new Vector3(transform.position.x - 1 ,transform.position.y,transform.position.z);
-          if (transform.position.x < -1)
-          {
-             transform.position = new Vector3( -1 ,transform.position.y,transform.position.z);
-          }
+            transform.position = new Vector3(-1, transform.position.y, transform.position.z);
         }
-       // rb.AddForce(Vector3.forward*0.5f);
-		if (isPressW == 1)
+
+
+
+
+
+        // rb.AddForce(Vector3.forward*0.5f);
+        if (isPressW == 1)
         {
             anim.SetInteger("hareket",1); // karekterin koşma animasyonu başlar
             Vector3 movement = new Vector3(0, 0, 1);//karaktere hareket hızını verir.
@@ -205,6 +224,8 @@ public TextMeshProUGUI textMeshLife;
 
             PlayerPrefs.SetInt("Diamond",totalPoints + PlayerPrefs.GetInt("Diamond")); //artık finish e geldigi için totalpointsleri Diamond key ine atayabilirim.
 
+            //bu anda yani oyunun finishline ına gelindiginde mouse a tılandıgında kosmamalı . o yüzden play e basıldı yı false a çekmek gerekli.
+            setIsClickPlayButtonFalse();
         }
 	}
 
@@ -242,6 +263,17 @@ public TextMeshProUGUI textMeshLife;
     public void setIsClickPlayButtonTrue() {
         isClickPlayButton = true;
 
+    }
+    public void setIsClickPlayButtonFalse()
+    {
+        isClickPlayButton = false;
+
+    }
+
+    //kosma aksiyonunu sadece play butonuna basıldıgında yapmalı. o yüzden isClickPlayButton degerini baska yerlerden almak gerekli.
+    public bool getIsClickPlayButtonValue()
+    {
+        return isClickPlayButton;
     }
 
 public void nextLevel()

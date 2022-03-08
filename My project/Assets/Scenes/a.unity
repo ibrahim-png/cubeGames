@@ -717,8 +717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrierGameObject: {fileID: 157148, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
-  diamondGameObject: {fileID: 1000013931470818, guid: 5c02591794acece409986647ed6329a7, type: 3}
-  diamond5GameObject: {fileID: 1000013656696560, guid: cd34118c604e29141afea74caecd70f2, type: 3}
+  diamondGameObject: {fileID: 1929957293321261644, guid: dfbaf9b28b0de43f29791cf3287868a3, type: 3}
+  diamond5GameObject: {fileID: 2396655925354526927, guid: fd95a037794554ad08dd0645af86bf85, type: 3}
   finishLineGameObject: {fileID: 7573913004664136295, guid: cac03c1c881f7449a85ab202eb51ad09, type: 3}
   human: {fileID: 963480013}
   roadCount: 0
@@ -2016,8 +2016,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrierGameObject: {fileID: 157148, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
-  diamondGameObject: {fileID: 1000013931470818, guid: 5c02591794acece409986647ed6329a7, type: 3}
-  diamond5GameObject: {fileID: 1000013656696560, guid: cd34118c604e29141afea74caecd70f2, type: 3}
+  diamondGameObject: {fileID: 1929957293321261644, guid: dfbaf9b28b0de43f29791cf3287868a3, type: 3}
+  diamond5GameObject: {fileID: 2396655925354526927, guid: fd95a037794554ad08dd0645af86bf85, type: 3}
   finishLineGameObject: {fileID: 7573913004664136295, guid: cac03c1c881f7449a85ab202eb51ad09, type: 3}
   human: {fileID: 963480013}
   roadCount: 0
@@ -2114,8 +2114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrierGameObject: {fileID: 157148, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
-  diamondGameObject: {fileID: 1000013931470818, guid: 5c02591794acece409986647ed6329a7, type: 3}
-  diamond5GameObject: {fileID: 1000013656696560, guid: cd34118c604e29141afea74caecd70f2, type: 3}
+  diamondGameObject: {fileID: 1929957293321261644, guid: dfbaf9b28b0de43f29791cf3287868a3, type: 3}
+  diamond5GameObject: {fileID: 2396655925354526927, guid: fd95a037794554ad08dd0645af86bf85, type: 3}
   finishLineGameObject: {fileID: 7573913004664136295, guid: e2cbec4e214604558b07ad2a15190909, type: 3}
   human: {fileID: 963480013}
   roadCount: 0
@@ -2225,8 +2225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrierGameObject: {fileID: 157148, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
-  diamondGameObject: {fileID: 1000013931470818, guid: 5c02591794acece409986647ed6329a7, type: 3}
-  diamond5GameObject: {fileID: 1000013656696560, guid: cd34118c604e29141afea74caecd70f2, type: 3}
+  diamondGameObject: {fileID: 1929957293321261644, guid: dfbaf9b28b0de43f29791cf3287868a3, type: 3}
+  diamond5GameObject: {fileID: 2396655925354526927, guid: fd95a037794554ad08dd0645af86bf85, type: 3}
   finishLineGameObject: {fileID: 7573913004664136295, guid: cac03c1c881f7449a85ab202eb51ad09, type: 3}
   human: {fileID: 963480013}
   roadCount: 0
@@ -3085,6 +3085,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &963480018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963480013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a24bf3638224ed981915b0728c77d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swerveSpeed: 0.25
+  maxSwerveAmount: 0.5
+--- !u!114 &963480019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963480013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2091578672c4d4b91bbaa13903a89173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &998755165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5248,8 +5274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrierGameObject: {fileID: 157148, guid: e013b60eb0eec284ba3dce713b6ebf9b, type: 3}
-  diamondGameObject: {fileID: 1000013931470818, guid: 5c02591794acece409986647ed6329a7, type: 3}
-  diamond5GameObject: {fileID: 1000013656696560, guid: cd34118c604e29141afea74caecd70f2, type: 3}
+  diamondGameObject: {fileID: 1929957293321261644, guid: dfbaf9b28b0de43f29791cf3287868a3, type: 3}
+  diamond5GameObject: {fileID: 2396655925354526927, guid: fd95a037794554ad08dd0645af86bf85, type: 3}
   finishLineGameObject: {fileID: 7573913004664136295, guid: cac03c1c881f7449a85ab202eb51ad09, type: 3}
   human: {fileID: 963480013}
   roadCount: 0

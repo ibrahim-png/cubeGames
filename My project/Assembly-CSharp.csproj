@@ -58,14 +58,16 @@
   <ItemGroup>
     <Compile Include="Assets/scripts/diamond4side.cs" />
     <Compile Include="Assets/scripts/diamondScript.cs" />
+    <Compile Include="Assets/scripts/floatingText.cs" />
     <Compile Include="Assets/scripts/roadController.cs" />
+    <Compile Include="Assets/playBackground.cs" />
     <Compile Include="Assets/scripts/bariyer.cs" />
     <Compile Include="Assets/scripts/script.cs" />
-    <Compile Include="Assets/scripts/gameOverScreen.cs" />
     <Compile Include="Assets/scripts/menuGameController.cs" />
+    <Compile Include="Assets/scripts/gameOverScreen.cs" />
     <Compile Include="Assets/scripts/menuScreen.cs" />
-    <Compile Include="Assets/playBackground.cs" />
-    <Compile Include="Assets/scripts/floatingText.cs" />
+    <Compile Include="Assets/scripts/SwerveInputSystem.cs" />
+    <Compile Include="Assets/scripts/SwerveMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
